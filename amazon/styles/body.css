@@ -1,0 +1,150 @@
+.product-details{
+    position: absolute;
+    top: 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+@media (max-width: 530px) {
+    .product-details{
+        grid-template-columns: 1fr 1fr;
+    }
+    .rating-details{
+        margin-top: 25px;
+    }
+}
+
+@media (min-width: 531px) and (max-width: 795px) {
+    .product-details{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .rating-details{
+        margin-top: 25px;
+    }
+} 
+
+@media (min-width: 796px) and (max-width: 1060px) {
+    .product-details{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 1061px) {
+    .product-details{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+}
+
+.single-product{
+    padding: 10px;
+    border: 1px solid rgba(128, 128, 128, .3);
+    padding: 30px 20px;
+    position: relative;
+}
+
+.product-img{
+    height: 170px;
+    width: 200px;
+    object-fit:contain;
+    object-position: center;
+    margin-bottom: 20px;
+}
+
+.title{
+    font-size: 16px;
+    height: 35px;
+    margin-bottom: 10px;
+}
+
+.rating-details{
+    margin-bottom: 10px;
+}
+
+.rating-img{
+    width: 120px;
+}
+
+.rating-count{
+    vertical-align: top;
+    font-size: 20px;
+    padding: 1px;
+    cursor: pointer;
+    color: rgb(1, 124, 182);
+}
+
+.price-container{
+    margin-bottom: 10px;
+}
+
+.price{
+    font-weight: bold;
+}
+
+.quantity{
+    font-size: 15px;
+    color: rgb(33, 33, 33);
+    background-color: rgb(240, 240, 240);
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 3px 5px;
+    margin-bottom: 10px;
+}
+
+.quantity:focus{
+    outline: 2px solid rgb(255, 153, 0);
+}
+
+.buying-info{
+    margin-bottom: 40px;
+}
+
+.color-container .text,
+.size-container .text,
+.set-container .text,
+.style-container .text{
+    margin-bottom: 8px;
+}
+
+.colors,
+.sizes,
+.sets,
+.styles{
+    margin-bottom: 15px;
+}
+
+.color,
+.size,
+.set,
+.style{
+    border: 1px solid gray;
+    background-color: #fff;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 7px;
+}
+
+.color:focus,
+.size:focus,
+.set:focus,
+.style:focus{
+    outline: 2px solid rgb(231, 117, 2);
+}
+
+.cart-btn-container{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 15px;
+    left: 35px;
+}
+
+.cart-btn{
+    width: 180px;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 50px;
+    color: rgb(33, 33, 33);
+    background-color: rgb(255, 216, 20);
+    border: 1px solid rgb(252, 210, 0);
+}
