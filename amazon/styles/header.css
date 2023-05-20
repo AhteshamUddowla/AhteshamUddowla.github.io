@@ -11,17 +11,7 @@
 
 .left-section{
     width: 180px;
-    /*height: 50px;
-    margin-top: 4px;
-    margin-left: 8px;
-    border: 2px solid rgba(255,255,255,0);
-    transition: border 0.3s;*/
 }
-
-/*.left-section:hover{
-    border: 2px solid rgba(255,255,255,1);
-    border-radius: 4px;
-}*/
 
 .amazon-logo{
     height: 30px;
@@ -137,6 +127,7 @@
     font-size: 15px;
     font-weight: bold;
     margin-top: 15px;
+    text-decoration: none;
 }
 
 .returns{
