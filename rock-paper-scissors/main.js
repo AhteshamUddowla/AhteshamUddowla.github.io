@@ -12,8 +12,9 @@ function reset(){
     score.wins = 0,
     score.losses = 0,
     score.ties = 0;
+    localStorage.removeItem('score');
     updateScore();
-    // localStorage.removeItem('score');
+    location.reload();
 }
 
 function updateScore(){
