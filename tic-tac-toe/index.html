@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <link rel="stylesheet" href="main.css">
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <div class="container">
+        <div class="play-btn">
+            <div class="btn-container">
+                <div class="btn">
+                    <button id="btn1" onclick="tic1()"></button>
+                    <button id="btn2" onclick="tic2()"></button>
+                    <button id="btn3" onclick="tic3()"></button>
+                </div>
+                <div  class="btn">
+                    <button id="btn4" onclick="tic4()"></button>
+                    <button id="btn5" onclick="tic5()"></button>
+                    <button id="btn6" onclick="tic6()"></button>
+                </div>
+                <div class="btn">
+                    <button id="btn7" onclick="tic7()"></button>
+                    <button id="btn8" onclick="tic8()"></button>
+                    <button id="btn9" onclick="tic9()"></button>
+                </div>
+            </div>
+        </div>
+        <div class="reset-btn">
+            <input onclick="reset()" type="reset" value="Restart">
+        </div>
+        <div class="result">
+            <p id="winner"></p>
+            <p id="draw"></p>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

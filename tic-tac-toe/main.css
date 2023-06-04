@@ -1,0 +1,66 @@
+body{
+    background: linear-gradient(0deg, rgba(115, 200, 169,0.8), rgba(55, 59, 68,0.8)), no-repeat;
+    height: 100vh;
+}
+.container{
+    width: 400px;
+    margin: auto;
+    padding-top: 10px;
+}
+.play-btn{
+    width: 300px;
+    margin: auto;
+    background: linear-gradient(0deg, rgba(115, 200, 169,0.8), rgba(55, 59, 68,0.8)), url("tic.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: 5px solid black;
+    border-radius: 15px;
+}
+.btn-container{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.btn{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+button{
+    height: 80px;
+    width: 80px;
+    border-radius: 10px;
+    font-size: 50px;
+    border: 2px solid black;
+}
+.reset-btn{
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+input{
+    height: 60px; 
+    width: 115px; 
+    color:white; 
+    font-size: 25px; 
+    font-weight: 800;
+    background: linear-gradient(0deg, rgba(115, 200, 169,0.8), rgba(55, 59, 68,0.8)), url("tic.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+.result{
+    width: 400px;
+    display: flex;
+    justify-content: center;
+}
+#winner{
+    font-size: 50px; 
+    color:#373B44; 
+}
+#draw{
+    font-size: 50px; 
+    color: red; 
+}
