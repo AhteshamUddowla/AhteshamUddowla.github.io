@@ -36,21 +36,21 @@ function playGame(playerMove){
 
     if(playerMove===computerMove)
     {
-            result = 'Tie';
+            result = 'Tie.';
             score.ties++;
     }
     else if( (playerMove==='rock' && computerMove==='scissors') || 
                 (playerMove==='paper' && computerMove==='rock') ||
                 (playerMove==='scissors' && computerMove==='paper') )
     {
-            result = 'You Win';
+            result = 'You Win.';
             score.wins++;
     }
     else if( (playerMove==='rock' && computerMove==='paper') || 
             (playerMove==='paper' && computerMove==='scissors') ||
             (playerMove==='scissors' && computerMove==='rock') )
     {
-            result = 'You Lose';
+            result = 'You Lose.';
             score.losses++;
     }
 
@@ -58,7 +58,9 @@ function playGame(playerMove){
 
     // alert(`You picked ${playerMove}. Computer picked ${computerMove}. ${result}.\nWins: ${score.wins}, Losses: ${score.losses}, Tie: ${score.ties}`);
     document.querySelector('.result').innerHTML = `${result}`;
-    document.querySelector('.choosen').innerHTML = `You ${playerMove} - Computer ${computerMove}`;
+    document.querySelector('.choosen').innerHTML = 
+    `You <img class="move-icon" src="images/${playerMove}-emoji.png">  
+    <img class="move-icon" src="images/${computerMove}-emoji.png"> Computer`;
     updateScore();
 }
 
