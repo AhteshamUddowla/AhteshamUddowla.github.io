@@ -9,7 +9,9 @@ body{
     font-weight: bold;
 }
 
-.move-btn{
+.move-rock-btn,
+.move-paper-btn,
+.move-scissor-btn{
     width: 120px;
     height: 120px;
     margin-right: 10px;
