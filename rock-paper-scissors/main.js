@@ -21,6 +21,31 @@ function updateScore(){
     document.querySelector('.score').innerHTML = `Wins: ${score.wins}, Losses: ${score.losses}, Ties: ${score.ties}`;
 }
 
+let intervalId;
+
+function autoplay(){
+    
+    if(document.querySelector('.auto-play-btn').innerHTML.trim()==='Auto Play'){
+        document.querySelector('.auto-play-btn').innerHTML = 'Stop Play';
+        intervalId = setInterval(function(){
+            let num = Math.ceil(Math.random() * 3);
+            let playerMove;
+            if(num===1)
+                playerMove = 'rock';
+            else if(num===2)
+                playerMove = 'paper';
+            else if(num===3)
+                playerMove = 'scissors'; 
+            playGame(playerMove);
+        }, 1000);
+    }
+    else{
+        clearInterval(intervalId);
+        document.querySelector('.auto-play-btn').innerHTML='Auto Play';
+    }
+    
+}
+
 function playGame(playerMove){
 
     let num, computerMove, result;
