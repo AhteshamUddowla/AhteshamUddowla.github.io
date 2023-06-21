@@ -1,0 +1,54 @@
+body{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    font-family: clockicons, sans-serif;
+    width: 70%;
+    margin: auto;
+}
+
+.counter{
+    font-size: 60px;
+    color: rgb(255, 149, 0);
+    text-align: center;
+}
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.reset{
+    background-color: rgb(255, 149, 0);
+    color: white;
+    font-size: 16px;
+    border: none;
+    height: 36px;
+    width: 90px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.reset:hover{
+    background-color: rgba(255, 149, 0, 0.7);
+}
+
+.start{
+    background-color: rgb(0, 128, 0); 
+    color: white;
+    font-size: 16px;
+    border: none;
+    height: 36px;
+    width: 90px;
+    cursor: pointer;
+}
+
+.start:hover{
+    background-color: rgba(0, 128, 0, 0.7);
+}
