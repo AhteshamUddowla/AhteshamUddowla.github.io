@@ -12,7 +12,7 @@ function display(){
     if(mils.toString().length===1)
         mils='0'+mils;
     document.querySelector('.counter').innerHTML = 
-`${hour} : ${min} : ${sec} . ${mils}`;
+`${hour}:${min}:${sec}.${mils}`;
 }
 
 // Reset
@@ -29,6 +29,22 @@ document.querySelector('.start').addEventListener(
         count();
     }
 )
+
+// Hover effect on start button
+document.querySelector('.start').addEventListener('mouseover', () => {
+    if(document.querySelector('.start').innerHTML.trim()=='Start')
+        document.querySelector('.start').style.backgroundColor = 'rgba(0, 128, 0, 0.7)';
+    else if(document.querySelector('.start').innerHTML.trim()=='Stop')
+        document.querySelector('.start').style.backgroundColor = 'rgba(239, 98, 98, 0.7)';
+})
+
+document.querySelector('.start').addEventListener('mouseout', () => {
+    if(document.querySelector('.start').innerHTML.trim()=='Start')
+        document.querySelector('.start').style.backgroundColor = 'rgb(0, 128, 0)';
+    else if(document.querySelector('.start').innerHTML.trim()=='Stop')
+        document.querySelector('.start').style.backgroundColor = 'rgb(239, 98, 98)';
+})
+
 
 let intervalId;
 
